@@ -1,6 +1,6 @@
 # online-voting
 
-Imagine we have three magical technologies, a stamp that only the owner of the stamp can use (digital signatures), envelopes that could only be opened by the right audience (public/private key encryption), and a public bulletin board that could never have anything taken down or modified, only things added (blockchain).
+Imagine we have three magical technologies, a stamp that only the owner of the stamp can use (**digital signatures**), envelopes that could only be opened by the right audience (**public/private key encryption**), and a public bulletin board that could never have anything taken down or modified, only things added (**blockchain**).
 
 Now, how might we use these technologies to design a better way to vote? Let’s start first by stating some simple goals of this new way to vote. We definitely want it to be as transparent as possible, but we also want to protect the right of anonymity to a voter. We want an open system, but we also need a central authority to determine eligibility. Above all else, we must be able to verify the integrity of our own vote. So, here is my idea:
 
