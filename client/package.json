@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "name": "vcs.fieldview.web.client",
+  "private": true,
+  "dependencies": {
+    "angular2": "2.0.0-beta.16",
+    "es6-shim": "0.35.0",
+    "jquery": "2.2.3",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "systemjs": "0.19.24",
+    "typescript": "1.8.9",
+    "typescript-dotnet": "^2.7.14",
+    "underscore": "^1.8.3",
+    "zone.js": "^0.6.12",
+    "spin.js": "2.3.2",
+    "jsencrypt": "2.3.0",
+    "bootstrap": "3.3.6"
+  },
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.0",
+    "gulp-cssmin": "0.1.7",
+    "gulp-install": "^0.6.0",
+    "gulp-less": "^3.0.5",
+    "gulp-typescript": "2.12.1",
+    "gulp-uglify": "1.5.3",
+    "gulp-watch": "4.3.5",
+    "rimraf": "2.5.2"
+  }
+}

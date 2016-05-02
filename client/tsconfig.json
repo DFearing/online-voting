@@ -1,0 +1,20 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"noImplicitAny": false,
+		"noEmitOnError": true,
+		"removeComments": false,
+		"sourceMap": true,
+		"target": "es5",
+		"module": "system",
+		"moduleResolution": "node",		
+		"outFile": "../wwwroot/js/app.js",
+        "outDir": "wwwroot/js/app"
+	},
+	"exclude": [
+		"node_modules",
+		"wwwroot"
+	]
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Voting</title>
+    <link  href="css/lib/bootstrap.min.css" rel="stylesheet"></link>
+    <link  href="css/main.css" rel="stylesheet"></link>
+</head>
+<body>
+    <div>
+        <online-voting></online-voting>
+    </div>
+    <script src="js/lib/es6-shim.js"></script>
+    <script src="js/lib/Reflect.js"></script>
+    <script src="js/lib/angular2-polyfills.js"></script>
+    <script src="js/lib/system.src.js"></script>
+    <script src="js/lib/Rx.js"></script>
+    <script src="js/lib/angular2.dev.js"></script>
+    <script src="js/lib/http.dev.js"></script>
+    <script src="js/lib/router.dev.js"></script>
+    <script src="js/lib/spin.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // System.config({
+        //     paths: {
+        //         jquery: "/fieldviewweb/client/js/lib/jquery.min.js",
+        //         underscore: "/fieldviewweb/client/js/lib/underscore-min.js"
+        //     }
+        // });
+        System.import('app').then(null, console.error.bind(console));
+    </script>
+</body>
+</html>
