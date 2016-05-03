@@ -6,7 +6,7 @@ var gulp = require("gulp"),
     tsd = require("gulp-tsd");
     
 var paths = {
-	buildroot: "./bin/www",
+	buildroot: "./bin",
 	noderoot: "./node_modules/",
     sourceroot: "./source/"
 };

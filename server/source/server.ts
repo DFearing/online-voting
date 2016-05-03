@@ -3,8 +3,9 @@
 import express = require('express');
 var app = express();
 
-app.use('/', express.static('../../../client/wwwroot/index.html'));
-app.use('/', express.static('../../../client/wwwroot/'));
+app.use('/js', express.static(__dirname + "/../../client/wwwroot/js"));
+app.use('/css', express.static(__dirname + "/../../client/wwwroot/css"));
+app.use('*', express.static(__dirname + "/../../client/wwwroot"));
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
