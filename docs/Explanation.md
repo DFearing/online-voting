@@ -40,7 +40,7 @@ I like the progress we've made so far, but wouldn't it be really great if I coul
 
 Another neat property of public/private keys is their ability to act as a digital signature. Just like you can encrypt a message with a public key, you can sign a message with a private key. If you provide the public key and message, anyone can verify that the signature is valid. This signature proves that you control the private key. So, let's use public/private key pairs for our digital signature too. Let's let each voter generate them, we'll call them VtPubKey and VtPrvKey. Now let's define our message again as:
 
-`M = VtPubKey + Vote + VtPrvKey(Vote) + GvPubKey(Vote + RrPubKey(Secret) + VtPrivKey(Registration Code + Secret))`
+`M = VtPubKey + Vote + VtPrvKey(Vote) + GvPubKey(Vote + RrPubKey(Secret) + VtPrvKey(Registration Code + Secret))`
 
 Let's go through the message. First we have VtPubKey, the voter's public key. This is to allow signature verification. Next we have the vote, then we have VtPrvKey(Vote) which is a digital signature of our vote. On the very far right we can see we've also signed our registration code and our secret, that along with our vote and the results of encrypting our secret with our registration public key is all encrypted with the government's public key.
 
