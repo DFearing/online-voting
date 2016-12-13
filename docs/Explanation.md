@@ -48,4 +48,6 @@ But what is this message without a corresponding message from the government ver
 
 `V = GvPubKey + VtPubKey + GvPrvKey(VtPubKey)`
 
-In order to tally the vote, all Ms with matching Vs are counted, everything else is ignored.
+In order to tally the vote, all Ms with matching Vs are counted, everything else is ignored. If a voter wants to verify their vote on a trusted/semi-trusted system, which they absolutely should, they don't even need to worry about voting on a compromised system. Let's examine why. 
+
+Look at M again, but this time from the perspective of a hacker looking to change the results of the election. Say you vote A, but they change your vote to B, when you verify your vote, it won't match. Even if they feed you false data and point you to an actual record on the blockchain with a vote for A, the values won't match because of the registration code. With voter verification, even a compromised voting system isn't a problem.
