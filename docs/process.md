@@ -12,11 +12,11 @@
 
 1. The voter follows the directions received with their registration code and visits a website where their identity is challenged using industry standard methods of identity verification (address/work history, SSN, etc.). Once they've authenticated, they will be asked to provide their registration code as well as create a secret. Once they provide the correct registration code, the system will push a Voter Identity Verification Message on the blockchain. The system will then provide the Voter a chance to save their public/private key, registration public key, and secret.
 
-2. The government uses the Voter Identity Verification Message to confirm the eligibility of the Voter. If they are eligible, the government will push two messages on the blockchain, the Government Identity Verfied & Key Exchange message and the Government Public Key Validation message.
+2. The government uses the Voter Identity Verification message to confirm the eligibility of the Voter. If they are eligible, the government will push two messages on the blockchain, the Private Key Exchange message and the Public Key Validation message.
 
 ### Anonymous Voting
 
-1. The Voter visits a website and enters their private key, using this information the systems retrieves and decrypts the anonymous voter private key from the Government Identity Verified & Key Exchange message. When the voter cast a ballot, the system will use the information to push a Voter Ballot message onto the blockchain.
+1. The Voter visits a website and enters their private key, using this information the systems retrieves and decrypts the anonymous voter private key from the Private Key Exchange message. When the voter cast a ballot, the system will use the information to push a Ballot message onto the blockchain.
 
 ## Post-Election Process
 
@@ -26,4 +26,4 @@
 
 ### Counting Ballots
 
-Each Voter Ballot Message is considered valid and should be counted if, for it's public key, there is a corresponding Government Public Key Validation Message. 
+Each Ballot message is considered valid and should be counted if, for it's public key, there is a corresponding Public Key Validation message. 
