@@ -2,8 +2,8 @@
 
 ## Pre-Election Process
 
-1. A database of all eligible voters is created and copied to a physically secure offline system.
-3. For each eligible voter, the offline system creates a public/private key pair and a unique registration code. This information is saved in the offline system. The public key for each voter, as well as the registration code encrypted with the voter's public key, are copied to an online system.
+1. A database of all eligible voters is created and copied to a physically secure offline system.  
+3. For each eligible voter, the offline system creates a public/private key pair and a unique registration code. This information is saved in the offline system. The public key for each voter, as well as the registration code encrypted with the voter's public key, are copied to an online system.  
 4. Each voter is mailed their registration code.
 
 ## Voting Process
