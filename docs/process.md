@@ -16,7 +16,7 @@
 
 ### Anonymous Voting
 
-1. The Voter visits a website and enters their private key, using this information the systems retrieves and decrypts the anonymous voter private key from the Private Key Exchange message. When the voter cast a ballot, the system will use the information to push a Ballot message onto the blockchain.
+1. The Voter visits a website and enters their private key (optionally, for added security, they should also enter their registration public key, secret, and registration code). Using this information the systems retrieves and decrypts the anonymous voter private key from the Private Key Exchange message. When the voter cast a ballot, the system will use the information to push a Ballot message onto the blockchain.
 
 ## Post-Election Process
 
