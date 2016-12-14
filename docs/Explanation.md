@@ -63,8 +63,11 @@ Now even if all registration codes are the same, the secret prevents the governm
 We've made tremendous progress, but we've also introduced a big problem. It's now possible for the government to know exactly how you've voted, which is never a good thing. This would largely be mitigated by procedures and not exactly the exact method of voting. But, let's see if we can do better. We want to separate our proof of identity from our vote. In order to achieve this, let's break the vote into two phases, an identity registration phase, consisting of three messages, R and V1 and V2, and a voting phase, consisting of one message M. Let's show the messages, then I'll explain the new additions
 
 `R = VtPubKey + GvPubKey(RrPubKey(Secret) + VtPrvKey(Registration Code + Secret))`
+
 `V1 = GvPubKey + VtPubKey + GvPrvKey(VtPubKey) + VtPubKey(VvPrvKey)`
+
 `V2 = GvPubKey + VvPubKey + GvPrvKey(VvPubKey)`
+
 `M = VvPubKey + Vote + VvPrivKey(Vote)`
 
 R represents all the registration data. We start with the voter's public key, then we have our secret encrypted with our registration public key, along with a signature of our registration code and secret, all encrypted with the government's private key. We've seen this all before, nothing new here. V1 is similar to V from before, we are just letting the world know R is valid, the one key difference, we are using the Voter's public key to encrypt a new private key, VvPrvKey, Verified Voter Private Key. V2 is another public declaration stating that VvPubKey is eligible to vote. M is now using our new Verified Voter public/private key pairs. We start with the public key, followed by the vote, followed by a signature of the vote.
