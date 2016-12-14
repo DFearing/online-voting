@@ -10,7 +10,7 @@
 
 ### Voter Verification
 
-1. The voter follows the directions received with their registration code and visits a website where their identity is challenged using industry standard methods of identity verification (address/work history, SSN, etc.). Once they've authenticated, they will be asked to provide their registration code as well as create a secret. Once they provide the correct registration code, the system will push a Voter Identity Verification Message on the blockchain. The system will then provide the Voter a chance to save their public/private key, registration public key, and secret.
+1. The voter follows the directions received with their registration code and visits a website where their identity is challenged using industry standard methods of identity verification (address/work history, SSN, etc.). Once they've authenticated, they will be asked to provide their registration code as well as create a secret. Once they provide the correct registration code, the system will push a Voter Identity Verification message on the blockchain. The system will then provide the Voter a chance to save their public/private key, registration public key, and secret.
 
 2. The government uses the Voter Identity Verification message to confirm the eligibility of the Voter. If they are eligible, the government will push two messages on the blockchain, the Private Key Exchange message and the Public Key Validation message.
 
