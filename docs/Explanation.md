@@ -68,7 +68,7 @@ We've made tremendous progress, but we've also introduced a big problem. It's no
 
 `V2 = GvPubKey + VvPubKey + GvPrvKey(VvPubKey)`
 
-`M = VvPubKey + Vote + VvPrivKey(Vote)`
+`M = VvPubKey + Vote + VvPrvKey(Vote)`
 
 R represents all the registration data. We start with the voter's public key, then we have our secret encrypted with our registration public key, along with a signature of our registration code and secret, all encrypted with the government's private key. We've seen this all before, nothing new here. V1 is similar to V from before, we are just letting the world know R is valid, the one key difference, we are using the Voter's public key to encrypt a new private key, VvPrvKey, Verified Voter Private Key. V2 is another public declaration stating that VvPubKey is eligible to vote. M is now using our new Verified Voter public/private key pairs. We start with the public key, followed by the vote, followed by a signature of the vote.
 
