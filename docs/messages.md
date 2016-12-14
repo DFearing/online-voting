@@ -27,7 +27,7 @@ Definition: AvPubKey + GvPrvKey(AvPubKey)
 1. AvPubKey - An anonymous voter public key, to identify a valid key
 2. GvPrvKey(AvPubKey) - Contents signed with the Government's private key, as proof of key ownership
 
-## Ballot Message
+## Voter Ballot Message
 Purpose: To allow a Voter to anonymously cast their vote  
 Definition: AvPubKey + Vote + AvPrvKey(Vote)  
 
