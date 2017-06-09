@@ -5,4 +5,4 @@ Input: VtPubKey + RrPubKey(RC) VtPrvKey(RC)
 
 1. Verify RrPubKey(RC) exists in IPFS database, reject otherwise
 2. Verify VtPrvKey(RC) was signed by VtPubKey, reject otherwise
-3. Generate new account with a voting token, send account's private key to voter's account encrypting with VtPubKey.
+3. Publish message to the blockchain as Voter Verification Record.
